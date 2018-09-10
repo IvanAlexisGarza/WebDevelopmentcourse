@@ -1,0 +1,9 @@
+Notes:
+
+jsbin.com
+
+<h1> Header </h1>
+<p> Paragraph </p> + <br> for line break
+<a href=" links"</a> 
+<title> Browser tab text </title>
+h1 and h2 tags are more probable to apear as key words in google searches 

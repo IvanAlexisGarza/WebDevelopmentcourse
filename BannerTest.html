@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+
+$(document).ready(function(){
+    $("#panel").hide();
+        $("#panel").slideDown( 3000 ).delay( 800 );
+});
+</script>
+ 
+<style> 
+#panel{
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    font-size: 200%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+ 
+<div id="panel">Chupala !</div>
+
+</body>
+</html>
