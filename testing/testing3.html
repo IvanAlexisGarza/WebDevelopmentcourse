@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            var frame = $("#banner-frame");
+
+            setTimeout(function () {
+                $(window).scroll(function () {
+                    console.log('delayed scroll handler');
+                    frame.delay(1000)
+                        .css("height", "90px")    
+                        .animate({ "bottom": "0px" }, 3000, "easeOutBack");
+                });
+            }, 1000);
+        });
+
+    </script>
+    <style>
+        #banner-frame {
+            background-color: #d8d8d8;
+            width: 1200px;
+            margin: auto;
+            padding: 10px;
+            height: 60px;
+            bottom: -300px;
+            position: fixed;
+            text-align: center;
+        } 
+
+        .clearfix{
+            overflow: auto;
+        }
+        /* #banner-frame {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            bottom: 0px;
+            bottom
+            background-color: #d8d8d8;
+            text-align: center;
+        } */
+
+        #banner-text {
+            position: relative;
+            width: 720x;
+            height: 60px;
+            margin: 120px auto;
+
+            background-color: black;
+        }
+
+        #banner-button {
+            position: relative;
+            padding-right: 40px;
+            float: right;
+        }
+
+        #filler {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="banner-frame">
+        QUISQUE AQUGUE TURPIS, IMPRDIET AT ORCI A, VIVERRA SCELERISQUE
+
+        <div class="clearfix">
+                <img id="banner-button" src="close.png">
+        </div>
+    </div>
+    <div id="filler"></div>
+</body>
+
+</html>
