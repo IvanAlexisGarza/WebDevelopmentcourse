@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>Styling boi</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/jquery-easing.js"></script>
+
+    <!-- <script type="text/javascript">
+        function removeButtonAttribute(){ //function to run when you click on the button...
+            var buttonValue = document.getElementById("redirect-button").value; //stores the button value
+            document.getElementById("landscappe-banner-redirect").innerHTML = buttonValue; // displays the value as a plain text inside "myDiv" - removing the button input entirely 
+        }
+    </script> -->
+        
+
+    <style>
+
+        /* Laptop{
+            width: 107px;
+            height: 17px;
+            padding-top: 10px;
+            padding-bottom: 13px;
+            padding-left: 12px;
+            padding-right: 10.4;
+            padding-right: 10px;
+
+        }
+
+        Tabet{
+            width: 86px;
+            height: 17px;
+            padding-top: 10px;
+            padding-bottom: 13px;
+            padding-left: 12px;
+            padding-right: 8;
+        } */
+
+
+        #landscapeBanner {
+
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+            background-color: #f3f3f3;
+            height: 60px;
+        }
+
+        #redirect-button {
+            width: 129.8px;
+            height: 40px;
+            border-radius: 3px;
+            border: solid 1px #dcdcdc;
+            background-color: #ffffff;
+            text-align: center;
+            float: left;
+            font-family: HelveticaNeue;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #1e8ae7;
+            margin: 0 auto;
+            padding: 0 24 0 24;
+        }
+
+        .redirect-button:hover {
+            border: solid 1px #1E8AE7;
+            background-color: #ffffff;
+        }
+
+        .landscape-banner-snippet {
+
+            background: #dd88dd;
+            text-decoration: none;
+            height: 60px;
+            color: #black;
+            font-family: HelveticaNeue;
+            font-size: 22px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 60px;
+            letter-spacing: normal;
+            text-align: center;
+            vertical-align: middle;
+            display: block;
+
+        }
+
+        .landscape-banner-button {
+            float: right;
+            margin-right: 3%;
+            background: #dd88dd;
+            width: 17ps;
+            height: 17ps;
+            ;
+            border: none;
+        }
+
+
+
+        #landscapeBannerContainer {
+            background: #f3f3f3;
+            width: 100%;
+        }
+
+        #landscapeBannerContent {
+            background: #f3f3f3;
+        }
+
+        #filler {
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="filler">
+        <div id="landscapeBanner">
+            <div id="landscapeBannerContainer">
+                <div id="landscapeBannerContent">
+                    <a id="landscape-banner-snippet" href="#">
+                        <!-- ${title}  -->
+                        <span id="landscappe-banner-redirect">
+                            <input type="button"  value="Learn More" id="Redirect-button" onClick="change()"></button>
+                        </span>
+                    </a>
+                    <button class="landscape-banner-button">
+                        <img src="/close.png" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
